@@ -1,0 +1,11 @@
+C:\temp\caanz\api\Microsoft.Identity.Web\bin\Debug\netcoreapp2.2\Microsoft.Identity.Web.deps.json
+C:\temp\caanz\api\Microsoft.Identity.Web\bin\Debug\netcoreapp2.2\Microsoft.Identity.Web.runtimeconfig.json
+C:\temp\caanz\api\Microsoft.Identity.Web\bin\Debug\netcoreapp2.2\Microsoft.Identity.Web.runtimeconfig.dev.json
+C:\temp\caanz\api\Microsoft.Identity.Web\bin\Debug\netcoreapp2.2\Microsoft.Identity.Web.dll
+C:\temp\caanz\api\Microsoft.Identity.Web\bin\Debug\netcoreapp2.2\Microsoft.Identity.Web.pdb
+C:\temp\caanz\api\Microsoft.Identity.Web\obj\Debug\netcoreapp2.2\Microsoft.Identity.Web.csproj.CoreCompileInputs.cache
+C:\temp\caanz\api\Microsoft.Identity.Web\obj\Debug\netcoreapp2.2\Microsoft.Identity.Web.sourcelink.json
+C:\temp\caanz\api\Microsoft.Identity.Web\obj\Debug\netcoreapp2.2\Microsoft.Identity.Web.AssemblyInfoInputs.cache
+C:\temp\caanz\api\Microsoft.Identity.Web\obj\Debug\netcoreapp2.2\Microsoft.Identity.Web.AssemblyInfo.cs
+C:\temp\caanz\api\Microsoft.Identity.Web\obj\Debug\netcoreapp2.2\Microsoft.Identity.Web.dll
+C:\temp\caanz\api\Microsoft.Identity.Web\obj\Debug\netcoreapp2.2\Microsoft.Identity.Web.pdb

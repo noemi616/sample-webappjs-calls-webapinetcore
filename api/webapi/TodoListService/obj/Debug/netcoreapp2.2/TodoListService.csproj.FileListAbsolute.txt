@@ -1,0 +1,17 @@
+C:\temp\caanz\api\webapi\TodoListService\obj\Debug\netcoreapp2.2\TodoListService.csproj.CoreCompileInputs.cache
+C:\temp\caanz\api\webapi\TodoListService\obj\Debug\netcoreapp2.2\TodoListService.RazorAssemblyInfo.cache
+C:\temp\caanz\api\webapi\TodoListService\obj\Debug\netcoreapp2.2\TodoListService.RazorAssemblyInfo.cs
+C:\temp\caanz\api\webapi\TodoListService\obj\Debug\netcoreapp2.2\TodoListService.AssemblyInfoInputs.cache
+C:\temp\caanz\api\webapi\TodoListService\obj\Debug\netcoreapp2.2\TodoListService.AssemblyInfo.cs
+C:\temp\caanz\api\webapi\TodoListService\bin\Debug\netcoreapp2.2\TodoListService.deps.json
+C:\temp\caanz\api\webapi\TodoListService\bin\Debug\netcoreapp2.2\TodoListService.runtimeconfig.json
+C:\temp\caanz\api\webapi\TodoListService\bin\Debug\netcoreapp2.2\TodoListService.runtimeconfig.dev.json
+C:\temp\caanz\api\webapi\TodoListService\bin\Debug\netcoreapp2.2\TodoListService.dll
+C:\temp\caanz\api\webapi\TodoListService\bin\Debug\netcoreapp2.2\TodoListService.pdb
+C:\temp\caanz\api\webapi\TodoListService\bin\Debug\netcoreapp2.2\Microsoft.Identity.Web.dll
+C:\temp\caanz\api\webapi\TodoListService\bin\Debug\netcoreapp2.2\Microsoft.Identity.Web.pdb
+C:\temp\caanz\api\webapi\TodoListService\obj\Debug\netcoreapp2.2\TodoListService.csprojAssemblyReference.cache
+C:\temp\caanz\api\webapi\TodoListService\obj\Debug\netcoreapp2.2\TodoListService.RazorTargetAssemblyInfo.cache
+C:\temp\caanz\api\webapi\TodoListService\obj\Debug\netcoreapp2.2\TodoListService.csproj.CopyComplete
+C:\temp\caanz\api\webapi\TodoListService\obj\Debug\netcoreapp2.2\TodoListService.dll
+C:\temp\caanz\api\webapi\TodoListService\obj\Debug\netcoreapp2.2\TodoListService.pdb

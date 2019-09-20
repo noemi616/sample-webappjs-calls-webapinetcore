@@ -1,0 +1,60 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\temp\\caanz\\api\\webapi\\TodoListClient\\TodoListClient.csproj": {}
+  },
+  "projects": {
+    "C:\\temp\\caanz\\api\\webapi\\TodoListClient\\TodoListClient.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\temp\\caanz\\api\\webapi\\TodoListClient\\TodoListClient.csproj",
+        "projectName": "TodoListClient",
+        "projectPath": "C:\\temp\\caanz\\api\\webapi\\TodoListClient\\TodoListClient.csproj",
+        "packagesPath": "C:\\Users\\novenera\\.nuget\\packages\\",
+        "outputPath": "C:\\temp\\caanz\\api\\webapi\\TodoListClient\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "C:\\Users\\novenera\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net471"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net471": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net471": {
+          "dependencies": {
+            "Microsoft.Identity.Client": {
+              "target": "Package",
+              "version": "[4.3.1, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[11.0.2, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}
