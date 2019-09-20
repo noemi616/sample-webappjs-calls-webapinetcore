@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\temp\\caanz\\api\\webapi\\TodoListService\\TodoListService.csproj": {}
+    "C:\\temp\\sample-webappjs-calls-webapinetcore\\api\\webapi\\TodoListService\\TodoListService.csproj": {}
   },
   "projects": {
-    "C:\\temp\\caanz\\api\\Microsoft.Identity.Web\\Microsoft.Identity.Web.csproj": {
+    "C:\\temp\\sample-webappjs-calls-webapinetcore\\api\\Microsoft.Identity.Web\\Microsoft.Identity.Web.csproj": {
       "version": "1.0.0-localbuild",
       "restore": {
-        "projectUniqueName": "C:\\temp\\caanz\\api\\Microsoft.Identity.Web\\Microsoft.Identity.Web.csproj",
+        "projectUniqueName": "C:\\temp\\sample-webappjs-calls-webapinetcore\\api\\Microsoft.Identity.Web\\Microsoft.Identity.Web.csproj",
         "projectName": "Microsoft.Identity.Web",
-        "projectPath": "C:\\temp\\caanz\\api\\Microsoft.Identity.Web\\Microsoft.Identity.Web.csproj",
+        "projectPath": "C:\\temp\\sample-webappjs-calls-webapinetcore\\api\\Microsoft.Identity.Web\\Microsoft.Identity.Web.csproj",
         "packagesPath": "C:\\Users\\novenera\\.nuget\\packages\\",
-        "outputPath": "C:\\temp\\caanz\\api\\Microsoft.Identity.Web\\obj\\",
+        "outputPath": "C:\\temp\\sample-webappjs-calls-webapinetcore\\api\\Microsoft.Identity.Web\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -82,14 +82,14 @@
         }
       }
     },
-    "C:\\temp\\caanz\\api\\webapi\\TodoListService\\TodoListService.csproj": {
+    "C:\\temp\\sample-webappjs-calls-webapinetcore\\api\\webapi\\TodoListService\\TodoListService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\temp\\caanz\\api\\webapi\\TodoListService\\TodoListService.csproj",
+        "projectUniqueName": "C:\\temp\\sample-webappjs-calls-webapinetcore\\api\\webapi\\TodoListService\\TodoListService.csproj",
         "projectName": "TodoListService",
-        "projectPath": "C:\\temp\\caanz\\api\\webapi\\TodoListService\\TodoListService.csproj",
+        "projectPath": "C:\\temp\\sample-webappjs-calls-webapinetcore\\api\\webapi\\TodoListService\\TodoListService.csproj",
         "packagesPath": "C:\\Users\\novenera\\.nuget\\packages\\",
-        "outputPath": "C:\\temp\\caanz\\api\\webapi\\TodoListService\\obj\\",
+        "outputPath": "C:\\temp\\sample-webappjs-calls-webapinetcore\\api\\webapi\\TodoListService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -107,8 +107,8 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "C:\\temp\\caanz\\api\\Microsoft.Identity.Web\\Microsoft.Identity.Web.csproj": {
-                "projectPath": "C:\\temp\\caanz\\api\\Microsoft.Identity.Web\\Microsoft.Identity.Web.csproj"
+              "C:\\temp\\sample-webappjs-calls-webapinetcore\\api\\Microsoft.Identity.Web\\Microsoft.Identity.Web.csproj": {
+                "projectPath": "C:\\temp\\sample-webappjs-calls-webapinetcore\\api\\Microsoft.Identity.Web\\Microsoft.Identity.Web.csproj"
               }
             }
           }

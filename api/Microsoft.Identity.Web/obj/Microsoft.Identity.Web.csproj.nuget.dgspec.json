@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\temp\\caanz\\api\\Microsoft.Identity.Web\\Microsoft.Identity.Web.csproj": {}
+    "C:\\temp\\sample-webappjs-calls-webapinetcore\\api\\Microsoft.Identity.Web\\Microsoft.Identity.Web.csproj": {}
   },
   "projects": {
-    "C:\\temp\\caanz\\api\\Microsoft.Identity.Web\\Microsoft.Identity.Web.csproj": {
+    "C:\\temp\\sample-webappjs-calls-webapinetcore\\api\\Microsoft.Identity.Web\\Microsoft.Identity.Web.csproj": {
       "version": "1.0.0-localbuild",
       "restore": {
-        "projectUniqueName": "C:\\temp\\caanz\\api\\Microsoft.Identity.Web\\Microsoft.Identity.Web.csproj",
+        "projectUniqueName": "C:\\temp\\sample-webappjs-calls-webapinetcore\\api\\Microsoft.Identity.Web\\Microsoft.Identity.Web.csproj",
         "projectName": "Microsoft.Identity.Web",
-        "projectPath": "C:\\temp\\caanz\\api\\Microsoft.Identity.Web\\Microsoft.Identity.Web.csproj",
+        "projectPath": "C:\\temp\\sample-webappjs-calls-webapinetcore\\api\\Microsoft.Identity.Web\\Microsoft.Identity.Web.csproj",
         "packagesPath": "C:\\Users\\novenera\\.nuget\\packages\\",
-        "outputPath": "C:\\temp\\caanz\\api\\Microsoft.Identity.Web\\obj\\",
+        "outputPath": "C:\\temp\\sample-webappjs-calls-webapinetcore\\api\\Microsoft.Identity.Web\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

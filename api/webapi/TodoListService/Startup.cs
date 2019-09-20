@@ -43,11 +43,14 @@ namespace TodoListService
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            //Adding CorsPolicy from https://weblog.west-wind.com/posts/2016/sep/26/aspnet-core-and-cors-gotchas
-            //and https://www.c-sharpcorner.com/article/enabling-cors-in-asp-net-core-api-application/
+            //Add CorsPolicy
+            //In this example, I have allowed request to come from any origins, using any headers and methods, and allow credentials
+            //However, it is best practice to define a more restrictive policy 
+            //e.g. Defining all request to come from samplewfe only - options.WithOrigins("http://localhost:30662", "https://localhost:30662"
+            //more on https://docs.microsoft.com/en-us/aspnet/core/security/cors?view=aspnetcore-2.2
             services.AddCors(c =>
             {
-                c.AddPolicy("CORSPolicy", options => options.AllowAnyOrigin()
+                c.AddPolicy("AllowAll", options => options.AllowAnyOrigin()
                                                             .AllowAnyMethod()
                                                             .AllowAnyHeader()
                                                             .AllowCredentials());
@@ -61,10 +64,10 @@ namespace TodoListService
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
-            //Adding CorsPolicy from https://weblog.west-wind.com/posts/2016/sep/26/aspnet-core-and-cors-gotchas
-            //and https://www.c-sharpcorner.com/article/enabling-cors-in-asp-net-core-api-application/
-            app.UseCors("CORSPolicy");
+            //Apply the policy to the app
+            app.UseCors("AllowAll");
 
+            //Or, define the app origin (samplewfe) to allow requests from, this is more secure
             //app.UseCors(options => options.WithOrigins("http://localhost:30662", "https://localhost:30662"));
 
             if (env.IsDevelopment())

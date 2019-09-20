@@ -18,14 +18,26 @@
     </div>
 <script>
 
+    //You can change this to your target API endpoint
+    var sampleapiConfig = {
+        apiEndpoint: "https://localhost:44351/api/todolist"
+    };
+
+    // create a request object for login or token request calls
+    // In scenarios with incremental consent, the request object can be further customized
+    var requestObj = {
+        scopes: ["api://xxxx/access_as_user"]
+    };
+
+    
     var msalConfig = {
         auth: {
-            clientId: 'f84507a0-242e-4fa0-b5ae-07d909b7151d', //This is your client ID
+            clientId: 'xxxx', //This is your client ID
             authority: "https://login.microsoftonline.com/common", //This is your tenant info
             //The following config properties are added 
             //as per https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-angular
-            consentScopes: ["user.read", "api://e29412e1-007f-470c-9e3a-c368e73adcd9/access_as_user"],
-            protectedResourceMap: [['https://localhost:44351/api/todolist', ['api://e29412e1-007f-470c-9e3a-c368e73adcd9/access_as_user']], ['https://graph.microsoft.com/v1.0/me', ['user.read']]]
+            consentScopes: ["user.read", "api://xxxxx/access_as_user"],
+            protectedResourceMap: [[sampleapiConfig.apiEndpoint, ['api://xxxx/access_as_user']], ['https://graph.microsoft.com/v1.0/me', ['user.read']]]
 
         },
         cache: {
@@ -34,16 +46,7 @@
         }
     };
 
-    var graphConfig = {
-        graphMeEndpoint: "https://graph.microsoft.com/v1.0/me"
-    };
-
-    // create a request object for login or token request calls
-    // In scenarios with incremental consent, the request object can be further customized
-    var requestObj = {
-        scopes: ["api://e29412e1-007f-470c-9e3a-c368e73adcd9/access_as_user"]
-    };
-
+ 
     var myMSALObj = new Msal.UserAgentApplication(msalConfig);
 
     // Register Callbacks for redirect flow
@@ -69,16 +72,16 @@
     function acquireTokenPopupAndCallMSGraph() {
         //Always start with acquireTokenSilent to obtain a token in the signed in user from cache
         myMSALObj.acquireTokenSilent(requestObj).then(function (tokenResponse) {
-            //callMSGraph(graphConfig.graphMeEndpoint, tokenResponse.accessToken, graphAPICallback);
-            callWebApi("https://localhost:44351/api/todolist", tokenResponse.accessToken, webAPICallback);
+
+            callWebApi(sampleapiConfig.apiEndpoint, tokenResponse.accessToken, webAPICallback);
         }).catch(function (error) {
             console.log(error);
             // Upon acquireTokenSilent failure (due to consent or interaction or login required ONLY)
             // Call acquireTokenPopup(popup window) 
             if (requiresInteraction(error.errorCode)) {
                 myMSALObj.acquireTokenPopup(requestObj).then(function (tokenResponse) {
-                    //callMSGraph(graphConfig.graphMeEndpoint, tokenResponse.accessToken, graphAPICallback);
-                    callWebApi("https://localhost:44351/api/todolist", tokenResponse.accessToken, webAPICallback);
+                    
+                    callWebApi(sampleapiConfig.apiEndpoint, tokenResponse.accessToken, webAPICallback);
                 }).catch(function (error) {
                     console.log(error);
                 });
@@ -118,7 +121,7 @@
 
     function showWelcomeMessage() {
         var divWelcome = document.getElementById('WelcomeMessage');
-        divWelcome.innerHTML = "Welcome " + myMSALObj.getAccount().userName + " to Microsoft Graph API";
+        divWelcome.innerHTML = "Welcome " + myMSALObj.getAccount().userName + " to SampleWFE - Quickstart for MSAL JS";
         var loginbutton = document.getElementById('SignIn');
         loginbutton.innerHTML = 'Sign Out';
         loginbutton.setAttribute('onclick', 'signOut();');
@@ -128,8 +131,8 @@
    function acquireTokenRedirectAndCallMSGraph() {
         //Always start with acquireTokenSilent to obtain a token in the signed in user from cache
         myMSALObj.acquireTokenSilent(requestObj).then(function (tokenResponse) {
-            //callMSGraph(graphConfig.graphMeEndpoint, tokenResponse.accessToken, graphAPICallback);
-            callWebApi("https://localhost:44351/api/todolist", tokenResponse.accessToken, webAPICallback);
+            
+            callWebApi(sampleapiConfig.apiEndpoint, tokenResponse.accessToken, webAPICallback);
         }).catch(function (error) {
             console.log(error);
             // Upon acquireTokenSilent failure (due to consent or interaction or login required ONLY)
@@ -145,8 +148,8 @@
             console.log(error);
         } else {
             if (response.tokenType === "access_token") {
-                //callMSGraph(graphConfig.graphMeEndpoint, response.accessToken, graphAPICallback);
-                callWebApi("https://localhost:44351/api/todolist", response.accessToken, webAPICallback);
+                
+                callWebApi(sampleapiConfig.apiEndpoint, response.accessToken, webAPICallback);
             } else {
                 console.log("token type is:" + response.tokenType);
             }
